@@ -1,0 +1,12 @@
+version: '2'
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:14.0.0
+    command: -c standalone.xml
+    environment:
+      DB_VENDOR: h2
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: admin
+    ports:
+      - 8080:8080
+      - 8444:8443
