@@ -8,5 +8,5 @@ services:
       KEYCLOAK_USER: admin
       KEYCLOAK_PASSWORD: admin
     ports:
-      - 8080:8080
+      - 8087:8080
       - 8444:8443
